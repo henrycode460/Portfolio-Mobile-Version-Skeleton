@@ -1,0 +1,164 @@
+.logo{
+position: static;
+width: 76px;
+height: 20px;
+left: 12px;
+top: 50px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+
+/* identical to box height, or 111% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Primary/B400 */
+color: #6070FF;
+}
+
+.nav-image{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 24px;
+    top: calc(5% - 80px/2);
+    
+    border-radius: 8px;
+}
+
+.intro{
+    /* Primary Text */
+
+position: static;
+width: 327px;
+height: 150px;
+left: 24px;
+top: 114px;
+
+/* Header / 2 */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+
+/* or 130% */
+display: flex;
+align-items: center;
+
+/* Neutrals/N800 */
+color: #172B4D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 12px 0px;
+}
+
+.professional-details{
+    /* Primary Text */
+
+position: static;
+width: 327px;
+height: 146px;
+left: 24px;
+top: 276px;
+
+/* Body / 2 */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+/* or 150% */
+
+/* Neutrals/N600 */
+color: #344563;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 12px 0px;
+}
+
+.social-media-intro{
+    position: static;
+width: 117px;
+height: 24px;
+left: 0px;
+top: 0px;
+
+/* Body / 2 - Bolder */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+/* identical to box height, or 150% */
+
+/* Primary/B300 */
+color: #7F8CFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 8px;
+}
+
+.social-icon{
+    /* social media icons */
+
+position: static;
+width: 170.17px;
+height: 20px;
+left: 24px;
+top: 470px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+margin: 25px 0px;
+}
+
+.header-shape-image{
+
+position: absolute;
+width: 462px;
+height: 587.15px;
+left: -34px;
+top: 104px;
+  
+}
+
+.header-background{
+    /* header-background-mobile */
+
+position: absolute;
+width: 375px;
+height: 718px;
+left: 0px;
+top: 0px;
+
+/* Neutrals/N0 */
+background: #FFFFFF;
+
+}
