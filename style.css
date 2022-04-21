@@ -1,0 +1,61 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.header-style {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.logo {
+  color: #6070ff;
+  text-decoration: none;
+  font-weight: 700;
+  font-weight: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.headling {
+  background-image: url("./header-shapes-mobile.svg");
+  background-size: cover;
+  padding: 0 0 10px 10px;
+}
+
+.intro {
+  padding: 40px 0 0 0;
+  color: #172b4d;
+  font-style: normal;
+
+  /* font-weight: 700; */
+  font-size: 50px;
+  margin-bottom: 13px;
+}
+
+.professional-details {
+  color: #344563;
+  font-style: normal;
+
+  /* font-weight: 300; */
+  font-size: 18px;
+}
+
+.social-media-intro {
+  color: #7f8cff;
+  font-size: 18px;
+}
+
+.social-media-icon {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media {
+  list-style: none;
+}
+
+.list-style {
+  margin-left: -40px;
+  padding-right: 42px;
+}
