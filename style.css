@@ -1,5 +1,9 @@
 .header-style {
   height: 150px;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin: 20px 0;
 }
 
 .logo {
@@ -25,16 +29,17 @@
 }
 
 .nav-image {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: 24px;
-  top: calc(5% - 80px / 2);
-  border-radius: 8px;
+  position: static;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 20%;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 200px;
 }
 
 .intro {
