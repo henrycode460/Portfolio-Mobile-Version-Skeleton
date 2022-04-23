@@ -128,7 +128,7 @@ body {
 .details-sec {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
@@ -175,6 +175,7 @@ body {
   margin: 0 10px;
   border-radius: 0.5em;
   border: none;
+  
 }
 
 .btnNormal:hover {
@@ -186,7 +187,7 @@ body {
 .about-me-details {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
