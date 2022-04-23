@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'poppins', serif;
 }
 
 .header-style {
@@ -128,8 +128,8 @@ body {
 .details-sec {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 100;
-  font-size: 15px;
+  font-weight: 50;
+  font-size: 10px;
   line-height: 24px;
   color: #344563;
   margin: 12px 0;
@@ -171,10 +171,12 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396df2;
-  margin: 0 10px;
+  color: #172b4d;
+  margin: 0 9px;
+  padding: 5px 8px;
   border-radius: 0.5em;
   border: none;
+  background: rgb(243, 237, 237);
 }
 
 .btnNormal:hover {
@@ -183,22 +185,18 @@ body {
   background: blue;
 }
 
+.btnNormalTwo {
+  padding: 10px 2px;
+}
+
 .about-me-details {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 100;
-  font-size: 16px;
+  font-weight: 10;
+  font-size: 12px;
   line-height: 24px;
   color: #344563;
   margin: 12px 0;
-}
-
-.btnNormalTwo {
-  width: 100px;
-  height: 24px;
-  text-align: center;
-  padding: 5px 5px;
-  margin-left: -2px;
 }
 
 .lang-tille-link {
@@ -207,7 +205,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-left: -30px;
-  width: 230px;
+  width: 180px;
 }
 
 .lang-title {
@@ -262,11 +260,4 @@ body {
   background: #f7f7f9;
   border-radius: 8px;
   margin-top: 10px;
-}
-
-.lang-tille-linkTwo {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
 }
