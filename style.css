@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'poppins', serif;
 }
 
 .header-style {
@@ -13,7 +13,6 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-weight: 18px;
-  font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
 
@@ -21,16 +20,6 @@ body {
   background-image: url("./header-shapes-mobile.svg");
   background-size: cover;
   padding: 0 0 10px 10px;
-}
-
-.intro {
-  padding: 40px 0 0 0;
-  color: #172b4d;
-  font-style: normal;
-
-  /* font-weight: 700; */
-  font-size: 50px;
-  margin-bottom: 13px;
 }
 
 .professional-details {
@@ -58,4 +47,217 @@ body {
 .list-style {
   margin-left: -40px;
   padding-right: 42px;
+}
+
+.card-container {
+  display: flex;
+  padding-left: 15px;
+  flex-direction: column;
+  background: #e5e5e5;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  background: #fff;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 10px 10px;
+  margin: 40px 0;
+  width: 327px;
+  height: 552px;
+}
+
+.intro {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  margin: 12px 0;
+}
+
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 12px 0;
+}
+
+.workInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 0;
+  height: 32px;
+  margin: 0 12px;
+}
+
+.workInfoDetails {
+  list-style: none;
+}
+
+.workInfoDetailsLink {
+  text-decoration: none;
+  color: #7a869a;
+}
+
+.firstWorkLink {
+  color: #344563;
+  margin-left: -10px;
+}
+
+.counter {
+  background: #c1c7d0;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.details-sec {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 50;
+  font-size: 10px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px 0;
+}
+
+.tag-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px 0;
+  margin-left: -5px;
+}
+
+.tag-btn {
+  list-style: none;
+}
+
+.btn-small {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  margin-left: 5px;
+  border: none;
+  border-radius: 8px;
+  padding: 3px 10px;
+}
+
+.btnNormal {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #172b4d;
+  margin: 0 9px;
+  padding: 5px 8px;
+  border-radius: 0.5em;
+  border: none;
+  background: rgb(243, 237, 237);
+}
+
+.btnNormal:hover {
+  cursor: pointer;
+  color: white;
+  background: blue;
+}
+
+.btnNormalTwo {
+  padding: 10px 2px;
+}
+
+.about-me-details {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 10;
+  font-size: 12px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px 0;
+}
+
+.lang-tille-link {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -30px;
+  width: 180px;
+}
+
+.lang-title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.lang-icon {
+  margin-top: -17px;
+  margin-left: -35px;
+}
+
+.langIconDetails {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 10px -30px;
+  width: 230px;
+}
+
+.langIconDetailsLink {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #253858;
+}
+
+.first-lang {
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
+.sec-lang {
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.thd-lang {
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-top: 10px;
 }
