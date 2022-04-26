@@ -186,7 +186,9 @@ body {
 }
 
 .btnNormalTwo {
-  padding: 10px 2px;
+  padding: 5px 2px;
+  width: 100px;
+  text-align: center;
 }
 
 .about-me-details {
@@ -260,4 +262,95 @@ body {
   background: #f7f7f9;
   border-radius: 8px;
   margin-top: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./contact-form-shapes-mobile.svg");
+  background-color: #6070ff;
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-top-left-radius: 80px 60px;
+  height: 785px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.contact-heading-details {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 52px;
+}
+
+.contact-heading {
+  padding: 6px 20px;
+}
+
+.contact-paragraph {
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.contact-form-form {
+  padding: 5px;
+}
+
+.form-control {
+  width: 85%;
+  margin: 10px;
+  padding: 15px;
+}
+
+input[type=text],
+input[type=email] {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  height: 9px;
+  color: rgb(181, 174, 174);
+}
+
+textarea {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  height: 120px;
+  color: rgb(181, 174, 174);
+}
+
+.contact-btn {
+  background: #fff;
+  border-radius: 8px;
+
+  /* width: 140px; */
+  height: 48px;
+  padding: 10px 12px;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #fff;
+}
+
+.contact-butt-lin {
+  width: 134px;
+  height: 6px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 4px;
+  margin-top: 30px;
+  background: #0d151e;
+  border-radius: 10px;
 }
