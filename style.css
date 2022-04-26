@@ -270,7 +270,6 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("./contact-form-shapes-mobile.svg");
-  height: 779px;
   background-color: #6070ff;
   background-repeat: no-repeat;
   background-position: top right;
@@ -298,4 +297,8 @@ body {
 .contact-paragraph {
   line-height: 28px;
   color: #ebebff;
+}
+
+.contact-form {
+  width: 100%;
 }
