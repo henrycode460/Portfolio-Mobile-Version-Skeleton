@@ -136,11 +136,12 @@ body {
 }
 
 .tag-btn-container {
-  
+  display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 2px 0;
   margin-left: -5px;
-  width: 100%;
+  
   
 }
 
@@ -162,7 +163,7 @@ body {
   margin-left: 5px;
   border: none;
   border-radius: 8px;
-  clear: both;
+
   
   padding: 3px 10px;
   
