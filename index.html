@@ -268,13 +268,18 @@
                 
             </div>
             <div class="contact-heading text-center">
-                <form id="contact-form" class="contact-form-form" action="#">
-                    <input class="form-control" type="text" name="name" placeholder="Full name" />
-                    <input class="form-control" type="email" name="email" id="email" placeholder="Email address" />
-                    <textarea class="form-control" name="message" id="contact-message" placeholder="Write your message here"></textarea>
-                    <button type="submit">Get It Touch</button>
+                <form action="https://formspree.io/f/xqkngpdw" method="POST" id="contact-form" class="contact-form-form" >
+                    <input class="form-control" type="text" name="name" placeholder="Full name" maxlength="30" required/>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Email address" required />
+                    <textarea class="form-control" name="message" id="contact-message" placeholder="Write your message here" required maxlength="500"></textarea>
+                    <button class="contact-btn" type="submit">Get It Touch</button>
                 </form>
+
             </div>
+            <div class="contact-heading text-center ">
+                <div class="contact-butt-lin"></div>
+            </div>
+            
             
         </footer>
                         

@@ -274,6 +274,7 @@ body {
   background-repeat: no-repeat;
   background-position: top right;
   border-top-left-radius: 80px 60px;
+  height: 785px;
 }
 
 .text-center {
@@ -286,7 +287,7 @@ body {
 
 .contact-heading-details {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 52px;
 }
 
@@ -320,6 +321,35 @@ input[type=email] {
 textarea {
   border: 1px solid #fff;
   border-radius: 4px;
-  height: 150px;
+  height: 120px;
   color: rgb(181, 174, 174);
+}
+
+.contact-btn{
+  background: #FFFFFF;
+border-radius: 8px;
+/* width: 140px; */
+height: 48px;
+padding: 10px 12px;
+margin-left: 10px;
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+color: #6070FF;
+display: flex;
+flex-direction: row;
+align-items: center;
+border: 1px solid #fff;
+}
+
+.contact-butt-lin{
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px/2 - 0.5px);
+  bottom: 4px;
+  margin-top: 30px;
+  background: #0D151E;
+  border-radius: 10px;
 }
