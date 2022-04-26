@@ -304,7 +304,22 @@ body {
 }
 
 .form-control {
-  width: 100%;
+  width: 85%;
   margin: 10px;
   padding: 15px;
+}
+
+input[type=text],
+input[type=email] {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  height: 9px;
+  color: rgb(181, 174, 174);
+}
+
+textarea {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  height: 150px;
+  color: rgb(181, 174, 174);
 }
