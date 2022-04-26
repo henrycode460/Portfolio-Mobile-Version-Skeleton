@@ -269,3 +269,18 @@ body {
   border-radius: 8px;
   margin-top: 10px;
 }
+
+.contact-form{
+display: flex;
+ flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: url("./contact-form-shapes-mobile.svg");
+height: 779px;
+background-color: #6070FF;
+background-repeat: no-repeat;
+background-position: top right;
+border-top-left-radius: 80px 60px;
+
+
+}
