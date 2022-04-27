@@ -53,7 +53,10 @@ body {
   display: flex;
   padding-left: 15px;
   flex-direction: column;
+  justify-content: center;
+  
   background: #e5e5e5;
+  align-items: center;
 }
 
 .about {
@@ -67,12 +70,17 @@ body {
   background: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 16px;
   padding: 10px 10px;
   margin: 40px 0;
-  width: 327px;
-  height: 552px;
+
 }
+
 
 .intro {
   font-family: 'Poppins', sans-serif;
@@ -181,8 +189,8 @@ body {
 
 .btnNormal:hover {
   cursor: pointer;
-  color: white;
-  background: blue;
+  color: #6070FF;;
+  background: #EBEBFF;
 }
 
 .btnNormalTwo {
@@ -353,4 +361,233 @@ textarea {
   margin-top: 30px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+@media (max-width : 767px) {
+.navbarTwo{
+  display: none;
+}
+
+.card-containerTwo{
+  display: none;
+}
+
+}
+
+
+@media (min-width : 768px) {
+  .card-container{
+    display: none;
+  }
+
+  .headling{
+  padding: 150px 150px;
+ }
+ 
+  .header-style{
+    
+    background-image: url("./header-shapes-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    padding: 20px 50px;
+  }
+
+  .navbarTwo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+  }
+  .navbarTwo-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  .navbar{
+    display: none;
+  }
+
+  .navbarTwo-list{
+    list-style: none;
+  }
+  .navbarTwo-link{
+    text-decoration: none;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #344563;
+margin: 0px 10px;
+
+}
+
+.card-containerTwo{
+  border-radius: 24px;
+  padding: 40px 0;
+  display: flex;
+  padding-left: 15px;
+  flex-direction: column;
+  justify-content: center;
+  background: #e5e5e5;
+  align-items: center;
+ 
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+.card-detail-main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 530px;
+height: 445px;
+text-align: justify;
+padding: 0 15px;
+
+}
+
+.first-card-cont{
+  margin-top: -150px;
+  
+}
+
+.second-card-cont  {
+  margin-top: -5px;
+}
+
+.third-card-cont{
+  margin-top: -100px;
+}
+
+.fouth-card-cont{
+  margin-top: -100px;
+}
+
+
+
+.btnNormal{
+  background-color: #fff;
+  border: 2px solid #DFE1E6;
+  color: #396DF2;
+  font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em
+}
+
+.card-img{
+   width: 544px; 
+   height: 448px; 
+
+}
+
+  .about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 15px;
+    padding: 10px 60px;
+    margin-top: 30px;
+
+
+  }
+
+.sub-section{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 60px 20px;
+margin-top: -30px;
+
+}
+
+
+
+.languages{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.lang-title{
+  text-align: justify;
+}
+
+ .lang-icon{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+} 
+
+ .langIconDetails{
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 100px;
+} 
+
+.sec-lang, .thd-lang {
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-top: -3px;
+}
+
+.lang-tille-link{
+  display: flex;
+  flex-direction: row;
+   flex-wrap: wrap; 
+  justify-content: space-between;
+  width: 100%;
+} 
+
+.lang-secTwo{
+  margin-top: -20px;
+}
+
+.btnNormalTwo{
+  width: 138px;
+height: 40px;
+text-align: center;
+margin: 0px 4px;
+padding: 0 7px;
+}
+.contact-heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form{
+  margin-top: 50px;
+}
+
+.contact-paragraph{
+  text-align: center;
+}
+
+.contact-btn{
+margin-left: 240px;
+  align-items: center;
+}
+
+
 }
