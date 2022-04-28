@@ -1,11 +1,13 @@
 body {
   font-family: 'poppins', serif;
+  background-color: #E5E5E5;
 }
 
 .header-style {
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -20,13 +22,13 @@ body {
   background-image: url("./header-shapes-mobile.svg");
   background-size: cover;
   padding: 0 0 10px 10px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 80px 60px;
 }
 
 .professional-details {
   color: #344563;
   font-style: normal;
-
-  /* font-weight: 300; */
   font-size: 18px;
 }
 
@@ -283,6 +285,7 @@ body {
   background-position: top right;
   border-top-left-radius: 80px 60px;
   height: 785px;
+  width: 100%;
 }
 
 .text-center {
@@ -363,7 +366,17 @@ textarea {
   border-radius: 10px;
 }
 
+.bottmo-session{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-top-right-radius: 80px 60px;
+}
+
 @media (max-width : 767px) {
+
+  
+    
 .navbarTwo{
   display: none;
 }
@@ -506,6 +519,8 @@ letter-spacing: 0.03em
     padding-left: 15px;
     padding: 10px 60px;
     margin-top: 30px;
+    border-top-right-radius: 80px 60px;
+  
 
 
   }
@@ -515,7 +530,7 @@ letter-spacing: 0.03em
 flex-direction: column;
 align-items: flex-start;
 padding: 60px 20px;
-margin-top: -30px;
+
 
 }
 
