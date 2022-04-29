@@ -16,7 +16,23 @@ body {
   font-weight: 700;
   font-weight: 18px;
   font-size: 20px;
+
 }
+  
+#logo{
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+#logo:hover{
+  /* animation: logoStyle 2s ; */
+  transform: rotateY(90deg);
+  
+}
+
+
+
+  
+
 
 .top-session {
   background-color: #fff;
