@@ -177,6 +177,11 @@ body {
   line-height: 24px;
   color: #344563;
   margin: 12px 0;
+  transition: all 2s;
+}
+
+.details-sec:hover {
+  font-size: 15px;
 }
 
 .tag-btn-container {
