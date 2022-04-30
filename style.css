@@ -27,7 +27,6 @@ body {
   background-image: url("./header-shapes-mobile.svg");
   background-size: cover;
   padding: 114px 24px;
-  
 }
 
 .professional-details {
@@ -74,6 +73,7 @@ body {
   flex-direction: column;
   padding-left: 15px;
   background: #fff;
+  border-top-right-radius: 80px 60px;
 }
 
 .card {
@@ -81,7 +81,7 @@ body {
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   display: flex;
-  gap: 30px; 
+  gap: 30px;
   flex-direction: column;
   border-radius: 16px;
   padding: 10px 10px;
@@ -89,15 +89,10 @@ body {
   text-align: justify;
 }
 
-
-
-.card-img{
+.card-img {
   width: 100%;
   height: auto;
-
 }
-
-
 
 .intro {
   font-family: 'Poppins', sans-serif;
@@ -186,19 +181,16 @@ body {
 }
 
 .btnNormal {
+  background: #fff;
+  color: #7f8cff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 10px;
   line-height: 24px;
-  display: flex;
-  color: #172b4d;
-
-  /* margin: 0 9px; */
-  padding: 5px 10px;
-  border-radius: 0.5em;
-  border: none;
-  background: rgb(243, 237, 237);
+  padding: 10px 20px;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
 }
 
 .btnNormal:hover {
@@ -214,10 +206,6 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  width: 93px;
-  height: 48px;
-  left: 407px;
-  top: calc(50% - 48px / 2 + 57.5px);
   background: #2230d2;
   border-radius: 8px;
 }
@@ -244,11 +232,6 @@ body {
 }
 
 .btnNormalTwo:active {
-  padding: 12px;
-  width: 93px;
-  height: 48px;
-  left: 407px;
-  top: calc(50% - 48px / 2 + 57.5px);
   background: #2230d2;
   border-radius: 8px;
 }
@@ -298,11 +281,6 @@ body {
   display: flex;
   align-items: center;
   color: #000;
-}
-
-.lang-icon {
-  margin-top: -7px;
-  margin-left: -35px;
 }
 
 .langIconDetails {
@@ -446,21 +424,18 @@ textarea {
   .navbarTwo {
     display: none;
   }
-
 }
 
 @media (min-width: 768px) {
-
-
   .headling {
     padding: 359px 260px;
+    background-image: url("./Header-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
   }
 
   .header-style {
-    background-image: url("./header-shapes-mobile.svg");
-    background-repeat: no-repeat;
     background-position: top right;
-    background-size: cover;
     padding: 20px 50px;
   }
 
@@ -499,58 +474,44 @@ textarea {
     margin: 0 10px;
   }
 
-
-
   .card {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-  
-
   }
 
-  .card-img-head{
+  .card-img-head {
     flex: 1;
-    
   }
 
-  
-
-  .card:nth-child(even) .card-img-head{
+  .card:nth-child(even) .card-img-head {
     order: 2;
   }
 
- 
-
-
-
-  .card-content-area{
+  .card-content-area {
     text-align: justify;
-     /* margin-top: 15px;  */
+
+    /* margin-top: 15px;  */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex: 1;
-
   }
 
- 
-  
   .btnNormal {
-    background: #4053fc;
-    border: 2px solid #dfe1e6;
-    color: #fff;
+    background: #fff;
+    color: #7f8cff;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
     line-height: 24px;
     padding: 10px 20px;
+    border: 1px solid #7f8cff;
+    border-radius: 8px;
   }
-
-  
 
   .about {
     display: grid;
@@ -592,7 +553,6 @@ textarea {
     line-height: 20px;
     padding: 8px 1px;
     color: #253858;
-
   }
 
   .iconDetailsImgTwo {
@@ -604,13 +564,17 @@ textarea {
     display: flex;
     flex-direction: row;
     gap: 10px;
-     
+    padding: 0;
+    margin-top: -5px;
   }
 
   .langIconDetails {
     display: flex;
     flex-direction: column;
-    height: 90px;
+
+    /* justify-content: center; */
+    align-items: center;
+    height: auto;
     width: 100px;
   }
 
@@ -634,8 +598,8 @@ textarea {
   }
 
   .btnNormalTwo {
-    background: #ededf0;
-    border: 2px solid #dfe1e6;
+    background: #fff;
+    border: 1px solid #7f8cff;
     color: #396df2;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
@@ -650,10 +614,6 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .contact-form {
-    margin-top: 50px;
   }
 
   .contact-paragraph {
