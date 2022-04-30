@@ -16,25 +16,18 @@ body {
   font-weight: 700;
   font-weight: 18px;
   font-size: 20px;
-
 }
-  
-#logo{
+
+#logo {
   transition: font-size 2s, color 2s, transform 2s;
 }
 
-#logo:hover{
+#logo:hover {
   /* animation: logoStyle 2s ; */
   color: #fff;
   font-size: 25px;
   transform: rotate(360deg);
-  
 }
-
-
-
-  
-
 
 .top-session {
   background-color: #fff;
@@ -126,6 +119,7 @@ body {
   0% {
     font-size: 11px;
   }
+
   100% {
     font-size: 39px;
   }
@@ -491,10 +485,11 @@ textarea {
 
   @keyframes slideLeft {
     from {
-      margin-left: 100% ;
+      margin-left: 100%;
     }
-    to{
-      margin-left: 0%;;
+
+    to {
+      margin-left: 0%;
     }
   }
 
