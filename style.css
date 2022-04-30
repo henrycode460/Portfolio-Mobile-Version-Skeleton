@@ -20,12 +20,14 @@ body {
 }
   
 #logo{
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  transition: font-size 2s, color 2s, transform 2s;
 }
 
 #logo:hover{
   /* animation: logoStyle 2s ; */
-  transform: rotateY(90deg);
+  color: #fff;
+  font-size: 25px;
+  transform: rotate(360deg);
   
 }
 
@@ -117,6 +119,16 @@ body {
   align-items: center;
   color: #172b4d;
   margin: 12px 0;
+  animation: sizeBigTitle 3s;
+}
+
+@keyframes sizeBigTitle {
+  0% {
+    font-size: 10px;
+  }
+  100% {
+    font-size: 40px;
+  }
 }
 
 .project-title {
@@ -469,6 +481,16 @@ textarea {
 
   .headling {
     padding: 150px 150px;
+    animation: slideLeft 3s;
+  }
+
+  @keyframes slideLeft {
+    from {
+      margin-left: 100% ;
+    }
+    to{
+      margin-left: 0%;;
+    }
   }
 
   .header-style {
