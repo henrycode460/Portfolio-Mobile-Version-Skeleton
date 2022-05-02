@@ -20,6 +20,8 @@ Portfolio Mobile Version Skeleton
 ## Online Version
 - https://henrycode460.github.io/Portfolio-Mobile-Version-Skeleton/
 
+## Link to online version
+- https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/5_deploy.md
 
 ## 🤝 Contributing
 
