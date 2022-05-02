@@ -104,6 +104,17 @@ body {
   align-items: center;
   color: #172b4d;
   margin: 12px 0;
+  animation: sizeBigTitle 3s;
+}
+
+@keyframes sizeBigTitle {
+  0% {
+    font-size: 11px;
+  }
+
+  100% {
+    font-size: 40px;
+  }
 }
 
 .project-title {
@@ -152,6 +163,11 @@ body {
   line-height: 24px;
   color: #344563;
   margin: 12px 0;
+}
+
+.details-sec:hover {
+  transition: font-size 3s ease-in;
+  transform: scale(1.04);
 }
 
 .tag-btn-container {
@@ -432,6 +448,27 @@ textarea {
     background-image: url("./Header-bg.svg");
     background-repeat: no-repeat;
     background-size: 100% 85%;
+    animation: slideLeft 3s;
+  }
+
+  @keyframes slideLeft {
+    from {
+      margin-left: 100%;
+    }
+
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  #logo {
+    transition: font-size 2s, color 2s, transform 2s;
+  }
+
+  #logo:hover {
+    color: #fff;
+    font-size: 25px;
+    transform: rotate(360deg);
   }
 
   .header-style {
