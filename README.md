@@ -8,10 +8,6 @@ Portfolio Mobile Version Skeleton
 - HTML
 - css- flexbox
 
-## Online Version
-- https://henrycode460.github.io/Portfolio-Mobile-Version-Skeleton/
-
-
 
 
 ## Authors
@@ -19,7 +15,10 @@ Portfolio Mobile Version Skeleton
 👤 Henry V. Singbeh 
 
 - GitHub: (https://github.com/henrycode460/Portfolio-Mobile-Version-Skeleton)
-- 
+
+
+## Online Version
+- https://henrycode460.github.io/Portfolio-Mobile-Version-Skeleton/
 
 
 ## 🤝 Contributing
