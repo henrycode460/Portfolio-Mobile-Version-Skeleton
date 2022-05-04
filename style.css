@@ -1,5 +1,5 @@
 body {
-  font-family: 'poppins', serif;
+  font-family: "poppins", serif;
   background-color: #e5e5e5;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 .professional-details {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -39,7 +39,7 @@ body {
 }
 
 .social-media-intro {
-  color: #7f8cff;
+  color: hsl(233.9, 100%, 40.9%);
   font-size: 18px;
 }
 
@@ -92,10 +92,11 @@ body {
 .card-img {
   width: 100%;
   height: auto;
+  filter: brightness(0.7);
 }
 
 .intro {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -118,12 +119,12 @@ body {
 }
 
 .project-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172b4d;
+  color: hsl(217.8, 54%, 10.6%);
   margin: 4px 0;
 }
 
@@ -141,11 +142,11 @@ body {
 
 .workInfoDetailsLink {
   text-decoration: none;
-  color: #7a869a;
+  color: hsl(217.5, 13.7%, 25.1%);
 }
 
 .firstWorkLink {
-  color: #344563;
+  color: hsl(218.3, 31.1%, 15.6%);
   margin-left: -10px;
 }
 
@@ -156,12 +157,12 @@ body {
 }
 
 .details-sec {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 50;
   font-size: 10px;
   line-height: 24px;
-  color: #344563;
+  color: hsl(218.3, 31.1%, 10.6%);
   margin: 12px 0;
 }
 
@@ -183,13 +184,13 @@ body {
 }
 
 .btn-small {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: hsl(234, 100%, 45.8%);
   margin-left: 5px;
   border: none;
   border-radius: 8px;
@@ -198,11 +199,11 @@ body {
 
 .btnNormal {
   background: #fff;
-  color: #7f8cff;
-  font-family: 'Poppins', sans-serif;
+  color: hsl(233.9, 100%, 20.9%);
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 10px;
+  font-weight: 800;
+  font-size: 14px;
   line-height: 24px;
   padding: 10px 20px;
   border: 1px solid #7f8cff;
@@ -227,7 +228,7 @@ body {
 }
 
 .btnNormal:disabled {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -253,7 +254,7 @@ body {
 }
 
 .btnNormalTwo:disabled {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
@@ -265,12 +266,12 @@ body {
 }
 
 .about-me-details {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 10;
   font-size: 12px;
   line-height: 24px;
-  color: #344563;
+  color: hsl(218.3, 31.1%, 15.6%);
   margin: 12px 0;
 }
 
@@ -289,7 +290,7 @@ body {
 }
 
 .lang-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -310,7 +311,7 @@ body {
 
 .langIconDetailsLink {
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -384,8 +385,8 @@ body {
   padding: 15px;
 }
 
-input[type=text],
-input[type=email] {
+input[type="text"],
+input[type="email"] {
   border: 1px solid #fff;
   border-radius: 4px;
   height: 9px;
@@ -405,12 +406,12 @@ textarea {
   height: 48px;
   padding: 10px 12px;
   margin-left: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #6070ff;
+  color: hsl(234, 100%, 30.8%);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -499,7 +500,7 @@ textarea {
 
   .navbarTwo-link {
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -539,8 +540,8 @@ textarea {
 
   .btnNormal {
     background: #fff;
-    color: #7f8cff;
-    font-family: 'Poppins', sans-serif;
+    color: hsl(233.9, 100%, 30.9%);
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 350;
     font-size: 10px;
@@ -583,13 +584,13 @@ textarea {
 
   .lang-icon- {
     margin-top: -7px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
     padding: 8px 1px;
-    color: #253858;
+    color: hsl(217.6, 40.8%, 15.5%);
   }
 
   .iconDetailsImgTwo {
@@ -637,8 +638,8 @@ textarea {
   .btnNormalTwo {
     background: #fff;
     border: 1px solid #7f8cff;
-    color: #396df2;
-    font-family: 'Poppins', sans-serif;
+    color: hsl(223.1, 87.7%, 30.6%);
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 300;
