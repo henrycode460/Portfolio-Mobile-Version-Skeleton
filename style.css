@@ -3,10 +3,11 @@ body {
   background-color: #e5e5e5;
 }
 
+
 .header-style {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  /* padding: 16px; */
   background-color: #fff;
 }
 
@@ -16,18 +17,102 @@ body {
   font-weight: 700;
   font-weight: 18px;
   font-size: 20px;
+  position: absolute;
+  width: 200px;
+  padding: 10px 10px;
 }
+
+
+
 
 .top-session {
   background-color: #fff;
   border-bottom-left-radius: 80px 60px;
 }
 
+.btnOpen{
+  position: absolute;
+  right: 2em;
+  top:1em;
+  font-size: 24px;
+  background: none;
+  border: none;
+}
+.btnClose{
+  position: absolute;
+  right: 1em;
+  top: 0;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  
+}
+
+.navbarTwo{
+  position: absolute;
+  background:  #010311;
+   height: 55%;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  top: 20;
+  mix-blend-mode: multiply;
+
+  
+}
+
+.navbarTwo-details{
+  position: absolute;
+  margin-top: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+ 
+}
+
+.navbarTwo-link{
+font-weight: 800px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(170, 170, 34);
+  font-size: 24px;
+  cursor: pointer;
+
+  
+}
+
+.navbarTwo-link:hover{
+  font-weight: 800px;
+  border-bottom: 2px solid rgb(231, 221, 241);
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 1em;
+    transition: all 0.3s linear;
+
+    
+  }
+
+.navbarTwo-list{
+  margin-bottom: 25px;
+  list-style: none;
+  left: 0;
+}
+
+
 .headling {
   background-image: url("./header-shapes-mobile.svg");
   background-size: cover;
   padding: 114px 24px;
 }
+
 
 .professional-details {
   font-family: 'Poppins', sans-serif;
@@ -436,14 +521,16 @@ textarea {
   padding: 25px 10px;
   border-top-right-radius: 80px 60px;
 }
-
-@media (max-width: 767px) {
-  .navbarTwo {
-    display: none;
-  }
+ .hide{
+  visibility: hidden;
 }
 
-@media (min-width: 768px) {
+.show{
+  visibility: visible;
+} 
+
+
+@media (min-width: 768px)  {
   .headling {
     padding: 359px 260px;
     background-image: url("./Header-bg.svg");
@@ -477,17 +564,27 @@ textarea {
     padding: 20px 50px;
   }
 
-  .navbarTwo {
+   .navbarTwoDesk {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0;
+    visibility: visible;
+   background: none;
+   position: absolute;
+
+
+   
   }
+
+
 
   .navbarTwo-details {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  position: absolute;
+ 
   }
 
   .navbar {
@@ -496,6 +593,7 @@ textarea {
 
   .navbarTwo-list {
     list-style: none;
+   
   }
 
   .navbarTwo-link {
