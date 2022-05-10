@@ -24,6 +24,9 @@ Portfolio Mobile Version Skeleton
 - https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/5_deploy.md
 
 ## 🤝 Contributing
+<ul>
+    <li><a href="https://github.com/Profsain">Husseini Mudi </a></li>
+</ul>
 
 Contributions, issues, and feature requests are welcome!
 
