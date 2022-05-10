@@ -273,6 +273,7 @@ body {
 .btnNormal {
   background: #fff;
   color: hsl(233.9, 100%, 20.9%);
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -300,6 +301,7 @@ body {
 }
 
 .btnNormal:disabled {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
