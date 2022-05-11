@@ -6,7 +6,8 @@ body {
 .header-style {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+
+  /* padding: 16px; */
   background-color: #fff;
 }
 
@@ -16,11 +17,104 @@ body {
   font-weight: 700;
   font-weight: 18px;
   font-size: 20px;
+  position: absolute;
+  width: 200px;
+  padding: 10px 10px;
 }
 
 .top-session {
   background-color: #fff;
-  border-bottom-left-radius: 80px 60px;
+  border-bottom-left-radius: 90px 60px;
+  height: 800px;
+}
+
+.btnOpen {
+  position: absolute;
+  right: 2em;
+  top: 1em;
+  font-size: 24px;
+  background: none;
+  border: none;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btnClose {
+  position: absolute;
+  right: 1em;
+  top: 0;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 30px 30px;
+  transition: all 0.3s linear;
+}
+
+.btnClose:hover {
+  color: hsl(360, 71%, 66%);
+  transform: rotate(360deg);
+}
+
+.navbarTwo {
+  position: absolute;
+  background: #6070ff;
+  height: 850px;
+  width: 100%;
+  opacity: 95%;
+  text-align: justify;
+  top: 0;
+  left: 0;
+}
+
+.navbarTwo-details {
+  position: absolute;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbarTwo-link {
+  font-weight: 400px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: justify;
+  left: 0;
+}
+
+.navbarTwo-link:hover {
+  font-weight: 800px;
+  border-bottom: 2px solid #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 1em;
+  transition: all 0.3s linear;
+}
+
+.navbarTwo-list {
+  margin-bottom: 25px;
+  list-style: none;
+  left: 0;
 }
 
 .headling {
@@ -200,7 +294,7 @@ body {
 .btnNormal {
   background: #fff;
   color: hsl(233.9, 100%, 20.9%);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -437,13 +531,15 @@ textarea {
   border-top-right-radius: 80px 60px;
 }
 
-@media (max-width: 767px) {
-  .navbarTwo {
-    display: none;
-  }
+.hide {
+  visibility: hidden;
 }
 
-@media (min-width: 768px) {
+.show {
+  visibility: visible;
+}
+
+@media (min-width: 772px) {
   .headling {
     padding: 359px 260px;
     background-image: url("./Header-bg.svg");
@@ -478,16 +574,22 @@ textarea {
   }
 
   .navbarTwo {
-    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0;
+    visibility: visible;
+    background: none;
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 50%;
+    width: 46%;
   }
 
   .navbarTwo-details {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: absolute;
   }
 
   .navbar {
@@ -541,7 +643,7 @@ textarea {
   .btnNormal {
     background: #fff;
     color: hsl(233.9, 100%, 30.9%);
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 350;
     font-size: 10px;
