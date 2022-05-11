@@ -24,7 +24,8 @@ body {
 
 .top-session {
   background-color: #fff;
-  border-bottom-left-radius: 80px 60px;
+  border-bottom-left-radius: 90px 60px;
+  height: 800px;
 }
 
 .btnOpen {
@@ -34,6 +35,19 @@ body {
   font-size: 24px;
   background: none;
   border: none;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .btnClose {
@@ -44,42 +58,49 @@ body {
   background: none;
   border: none;
   color: #fff;
+  padding: 30px 30px;
+  transition: all 0.3s linear;
+}
+
+.btnClose:hover{
+  color: hsl(360, 71%, 66%);
+  transform: rotate(360deg);
 }
 
 .navbarTwo {
   position: absolute;
-  background: #01030a;
-  height: 600px;
+  background: #6070ff;
+  height: 850px;
   width: 100%;
-  z-index: 1;
-  text-align: center;
-  top: 20;
-  mix-blend-mode: multiply;
+  opacity: 95%;
+  text-align: justify;
+  top: 0;
+  left: 0;
+ 
 }
 
 .navbarTwo-details {
   position: absolute;
-  margin-top: 30%;
+  margin-top: 20%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  
 }
 
 .navbarTwo-link {
-  font-weight: 800px;
+  font-weight: 400px;
   text-decoration: none;
-  text-transform: uppercase;
   color: #fff;
-  font-size: 30px;
+  font-size: 24px;
   cursor: pointer;
-  text-align: center;
-  margin-left: 100px;
+  text-align: justify;
+  left:0;
 }
 
 .navbarTwo-link:hover {
   font-weight: 800px;
-  border-bottom: 2px solid rgb(231, 221, 241);
+  border-bottom: 2px solid #333;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -559,7 +580,7 @@ textarea {
     visibility: visible;
     background: none;
     position: absolute;
-    margin-top: -13%;
+    margin-top: -11%;
     margin-left: 50%;
     width: 46%;
   }
