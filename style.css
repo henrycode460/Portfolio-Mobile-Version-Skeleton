@@ -42,9 +42,11 @@ body {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -62,7 +64,7 @@ body {
   transition: all 0.3s linear;
 }
 
-.btnClose:hover{
+.btnClose:hover {
   color: hsl(360, 71%, 66%);
   transform: rotate(360deg);
 }
@@ -76,7 +78,6 @@ body {
   text-align: justify;
   top: 0;
   left: 0;
- 
 }
 
 .navbarTwo-details {
@@ -85,7 +86,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
 }
 
 .navbarTwo-link {
@@ -95,7 +95,7 @@ body {
   font-size: 24px;
   cursor: pointer;
   text-align: justify;
-  left:0;
+  left: 0;
 }
 
 .navbarTwo-link:hover {
