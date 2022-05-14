@@ -223,13 +223,11 @@ body {
 }
 
 .workInfo {
-  display: flex;
   flex-direction: row;
   align-items: center;
-   padding: 1px 8px; 
-   margin-left: -6px;
-   display:inline
- 
+  padding: 1px 8px;
+  margin-left: -6px;
+  display: inline;
 }
 
 .workInfoDetails {
@@ -543,8 +541,6 @@ textarea {
 
 /* popup session */
 
-
-
 #popup {
   display: flex;
   flex-direction: column;
@@ -553,25 +549,22 @@ textarea {
   margin: 0 auto;
   padding: 15px;
   border-radius: 8px;
-
 }
 
-.popupContainer{
-  position:fixed;
+.popupContainer {
+  position: fixed;
   z-index: 999;
   width: 100vw;
   height: 100vh;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  
   background: transparent;
   display: none;
   overflow-y: auto;
-  top:0;
-  
+  top: 0;
 }
 
-.popup-wrapper{
+.popup-wrapper {
   padding: 10px;
 }
 
@@ -580,18 +573,17 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 10px;
- 
-} 
+}
 
-.popup-header button{
+.popup-header button {
   position: absolute;
   height: 40px;
   width: 40px;
-  right: 0; 
+  right: 0;
   top: 0;
 }
 
-.popup-cont-one{
+.popup-cont-one {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -612,16 +604,15 @@ textarea {
   margin-left: -30px;
 }
 
-.mainWindow{
-position: relative;
+.mainWindow {
+  position: relative;
 }
 
 .seeBtnIcons {
   width: 16px;
   height: 16px;
- background: blue
+  background: blue;
 }
-
 
 @media (min-width: 772px) {
   .headling {
@@ -651,11 +642,11 @@ position: relative;
     margin-left: 10px;
   }
 
-  .popupTech{
+  .popupTech {
     display: flex;
   }
 
-  .popup-cont-one{
+  .popup-cont-one {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -726,7 +717,6 @@ position: relative;
     justify-content: center;
     background: #e5e5e5;
     align-items: center;
-    
   }
 
   .card {
@@ -897,13 +887,5 @@ position: relative;
 
   .popup-cont-one > div {
     flex-direction: column;
-  
   }
-
-
-
-
-
-  
 }
-
