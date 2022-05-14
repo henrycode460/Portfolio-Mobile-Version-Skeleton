@@ -4,12 +4,14 @@ const mainWindow = document.querySelector('.mainWindow');
 const popupCard = document.querySelector('.popupContainer');
 const cardContainer = document.querySelector('.card-container');
 const workDetails = document.querySelector('.worklist');
+const techDetails = document.querySelector('.technologiesContainer');
   
 
 
   
 const popupmethod = (projectId) => {
     let carditems = {};
+    
 
 // filter 
 for (let i = 0; i < cardObject.length; i += 1) {
@@ -25,24 +27,35 @@ for (let i = 0; i < cardObject.length; i += 1) {
   const projectTitle = document.querySelector('.Popup-project-title');
   const popuDetail = document.querySelector('.popup-details-sec');
   const technList = document.createElement('ul');
+  const technologiesList = document.createElement('ul');
   popupImg.setAttribute('src', carditems.featuredImage);
   projectTitle.innerText = carditems.projectName;
   popuDetail.innerText = carditems.projectDescription;
 
-  
 
      carditems.works.forEach((elem) => {
-         const item = document.createElement('li');
-         // item.classList.add('tag-text');
-         item.classList.add('workInfoDetails');
-         item.classList.add('workInfoDetailsLink');
-        
+          const item = document.createElement('li');
+         
          item.classList.add('workInfo');
-      item.innerText = elem;
-        technList.append(item);
-      });
+          item.innerText = elem;
+         technList.append(item);
+       });
       
-       workDetails.replaceChildren(technList);
+        workDetails.replaceChildren(technList);
+     
+
+       carditems.technologies.forEach((dataelem) => {
+        const data = document.createElement('button');
+        data.classList.add('btn-small');
+     
+        data.innerText = dataelem;
+       technologiesList.append(data);
+     });
+     
+      techDetails.replaceChildren(technologiesList);
+
+
+
 
 }
 
@@ -140,7 +153,21 @@ const projectCard = () => {
 
 
 
+// close modal box when user click anywhere outside the modal
+window.onclick = (event) => {
+  if (event.target ===  popupCard) {
+    popupCard.style.display = 'none';
+    
+  }
+};
 
+
+const closePopupBox = () => {
+   popupCard.style.display = 'none';
+   
+};
+ const closePopup = document.querySelector('.close-popup');
+ closePopup.addEventListener('click', closePopupBox);
 
 
 

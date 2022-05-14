@@ -5,7 +5,7 @@ const cardDetails = [
       projectDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
       featuredImage: 'https://henrycode460.github.io/Portfolio-Mobile-Version-Skeleton/desk-v-card-one.svg',
       technologies: ['html', 'CSS', 'JavaScript'],
-      works: ['Canopy', 'Back End',  '2015'],
+      works: ['CANOPY', 'Back End',  '2015'],
       
     },
     {

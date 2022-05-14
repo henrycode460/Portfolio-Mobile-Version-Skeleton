@@ -228,6 +228,7 @@ body {
   align-items: center;
    padding: 1px 8px; 
    margin-left: -6px;
+   display:inline
  
 }
 
@@ -540,6 +541,88 @@ textarea {
   visibility: visible;
 }
 
+/* popup session */
+
+
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  background-color: #c1c7d0;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 8px;
+
+}
+
+.popupContainer{
+  position:fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  
+  background: transparent;
+  display: none;
+  overflow-y: auto;
+  top:0;
+  
+}
+
+.popup-wrapper{
+  padding: 10px;
+}
+
+.popup-header > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+} 
+
+.popup-header button{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 0; 
+  top: 0;
+}
+
+.popup-cont-one{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.popup-cont-one > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.worklist {
+  margin-top: -20px;
+  margin-left: -45px;
+}
+
+#technologiesContainer {
+  margin-left: -30px;
+}
+
+.mainWindow{
+position: relative;
+}
+
+.seeBtnIcons {
+  width: 16px;
+  height: 16px;
+ background: blue
+}
+
+
 @media (min-width: 772px) {
   .headling {
     padding: 359px 260px;
@@ -557,6 +640,25 @@ textarea {
     to {
       margin-left: 0%;
     }
+  }
+
+  #technologiesContainer {
+    margin-left: -30px;
+  }
+
+  .popupBtn {
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+
+  .popupTech{
+    display: flex;
+  }
+
+  .popup-cont-one{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
   }
 
   #logo {
@@ -793,86 +895,12 @@ textarea {
     width: 100%;
   }
 
-  /* popup session */
-
-
-   .popup-card-cont-one{
-    display: flex;
+  .popup-cont-one > div {
     flex-direction: column;
-  }
-
-  #popup {
-    display: flex;
-    justify-content: start;
-    height: 1000px;
-    width: 800px;
-    transition: 200sm ease-in-out;
-    text-align: justify;
-    background-color: #c1c7d0;
-    
   
-   
-  }
-
-  .popupContainer{
-    position:fixed;
-    z-index: 999;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    background: transparent;
-    display: none;
-    overflow-y: auto;
-    top:0;
-  }
-
-  .popup-wrapper{
-    margin: 0 auto;
-    padding: 10px;
-  }
-
-  .popup-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-  } 
-
- 
- 
-  
- .popup-buttom-cont{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-margin-top: 30%;
-gap: 35px;
-padding: 10px 10px;
-}
-
-.mainWindow{
-  position: relative;
-}
-
-
-
-
-  
-.popup-details-sec {
-    width: 500px;
-    color: #344563;
-  } 
-
-  .header-text {
-    height: 350px;
   }
 
 
-/* #popup-img {
-  width: 800px;
-  height: auto;
-} */
 
 
 
