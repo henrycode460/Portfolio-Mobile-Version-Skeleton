@@ -484,7 +484,7 @@ input[type="email"] {
   border: 1px solid #fff;
   border-radius: 4px;
   height: 9px;
-  color: #172B4D;;
+  color: #172b4d;
 }
 
 textarea {
@@ -614,7 +614,7 @@ textarea {
   background: blue;
 }
 
-.contactBtnwrapper{
+.contactBtnwrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
