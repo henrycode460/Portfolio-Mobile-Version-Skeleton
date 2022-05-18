@@ -173,3 +173,27 @@ navCloseBtn.addEventListener("click", function(){
     document.getElementById("btnOpen").style.visibility = "visible";
 
 })
+
+
+// form validation
+ 
+const names = document.getElementById('name')
+const form = document.getElementById('contact-form')
+const errorelem = document.getElementById('errorMessage')
+const textArea = document.getElementById('contact-message')
+const email = document.getElementById('email');
+
+ form.addEventListener('submit', (e) =>{
+   e.preventDefault();
+
+ const emailRegex =   new RegExp(/^([a-z0-9\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9]{2,4})+$/);
+
+ if(!emailRegex.test(email.value)){
+   errorelem.innerText = `Email error, you have uppercase in email : ${email.value}`;
+   errorelem.style.color = "red";
+ }else{
+     form.submit();
+ }
+
+ });
+

@@ -118,7 +118,7 @@ body {
 }
 
 .headling {
-  background-image: url("./header-shapes-mobile.svg");
+  background-image: url("./images/header-shapes-mobile.svg");
   background-size: cover;
   padding: 114px 24px;
 }
@@ -437,7 +437,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./contact-form-shapes-mobile.svg");
+  background-image: url("./images/contact-form-shapes-mobile.svg");
   background-color: #6070ff;
   background-repeat: no-repeat;
   background-position: top right;
@@ -484,7 +484,7 @@ input[type="email"] {
   border: 1px solid #fff;
   border-radius: 4px;
   height: 9px;
-  color: rgb(181, 174, 174);
+  color: #172b4d;
 }
 
 textarea {
@@ -624,10 +624,16 @@ textarea {
   cursor: pointer;
 }
 
+.contactBtnwrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 @media (min-width: 772px) {
   .headling {
     padding: 359px 260px;
-    background-image: url("./Header-bg.svg");
+    background-image: url("./images/Header-bg.svg");
     background-repeat: no-repeat;
     background-size: 100% 85%;
     animation: slideLeft 3s;
@@ -886,7 +892,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("./contact-form-shapes-mobile.svg");
+    background-image: url("./images/contact-form-shapes-mobile.svg");
     background-color: #6070ff;
     background-repeat: no-repeat;
     background-position: top right;
