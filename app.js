@@ -1,14 +1,11 @@
-
 const cardObject = cardDetails;
 const mainWindow = document.querySelector('.mainWindow');
 const popupCard = document.querySelector('.popupContainer');
 const cardContainer = document.querySelector('.card-container');
 const workDetails = document.querySelector('.worklist');
 const techDetails = document.querySelector('.technologiesContainer');
-  
 
-
-  
+// popup function
 const popupmethod = (projectId) => {
     let carditems = {};
     
@@ -21,22 +18,23 @@ for (let i = 0; i < cardObject.length; i += 1) {
   }
 
  
-    
   const popupImg = document.querySelector('.card-image')
-    
   const projectTitle = document.querySelector('.Popup-project-title');
   const popuDetail = document.querySelector('.popup-details-sec');
   const technList = document.createElement('ul');
   const technologiesList = document.createElement('ul');
   popupImg.setAttribute('src', carditems.featuredImage);
   projectTitle.innerText = carditems.projectName;
+  projectTitle.classList.add('project-title');
   popuDetail.innerText = carditems.projectDescription;
+  
 
 
      carditems.works.forEach((elem) => {
           const item = document.createElement('li');
          
          item.classList.add('workInfo');
+         item.classList.add('workInfoDetailsLink');
           item.innerText = elem;
          technList.append(item);
        });
@@ -54,29 +52,18 @@ for (let i = 0; i < cardObject.length; i += 1) {
      
       techDetails.replaceChildren(technologiesList);
 
-
-
-
 }
-
-
 
 
 // see project handler
 const buttonMethod = (event) => {
     const id = parseInt(event.target.id, 10);
     popupmethod(id);
-    
-        // mainWindow.style.display = 'none'; 
     popupCard.style.display =  'block';
     
   }
 
-  // console.log(popupCard.classList)
-
-
-
-
+ 
   // project card builder
 const projectCard = () => {
     cardObject.forEach((data) => {
@@ -93,7 +80,6 @@ const projectCard = () => {
       const Btn = document.createElement('button');
       cardContentArea.classList.add('card-content-area');
       imageContainer.classList.add('card-img-head')
-
       technologiesDetails.classList.add('tag-btn-container')
   
       card.classList.add('card');
@@ -108,25 +94,20 @@ const projectCard = () => {
       featuredImg.setAttribute('src', data.featuredImage);
       projectTitle.innerText = data.projectName;
       projectDescription.innerHTML = data.projectDescription;
-
       Btn.innerText = 'See Project';
       Btn.setAttribute('id', data.id);
-    
-      
       Btn.addEventListener('click', buttonMethod);
 
       data.works.forEach((item) => {
         const workItem = document.createElement('a');
         workItem.classList.add('workInfoDetails');
         workItem.classList.add('workInfoDetailsLink');
-       
         workItem.classList.add('workInfo');
         workItem.innerText = item;
         workDetails.append( workItem);
       });
 
-      
-
+     
       data.technologies.forEach((item) => {
         const technoItem = document.createElement('button');
         technoItem.classList.add('tag-btn-container');
@@ -151,8 +132,6 @@ const projectCard = () => {
   };
   
 
-
-
 // close modal box when user click anywhere outside the modal
 window.onclick = (event) => {
   if (event.target ===  popupCard) {
@@ -169,37 +148,11 @@ const closePopupBox = () => {
  const closePopup = document.querySelector('.close-popup');
  closePopup.addEventListener('click', closePopupBox);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // navigation script
 const navOpenBtn = document.querySelector("#btnOpen");
 const navCloseBtn = document.querySelector("#btnClose");
 const navElem = document.querySelector("nav");
 let closeNavBar = document.querySelectorAll(".navbarTwo-link");
-
-
-
 
 for(i = 0; i < closeNavBar.length; i++ ){
     closeNavBar[i].addEventListener('click', function (){
@@ -220,7 +173,4 @@ navCloseBtn.addEventListener("click", function(){
     document.getElementById("btnOpen").style.visibility = "visible";
 
 })
-
-
-
 
