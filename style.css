@@ -254,7 +254,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 50;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 24px;
   color: hsl(218.3, 31.1%, 10.6%);
   margin: 12px 0;
@@ -614,6 +614,7 @@ textarea {
   width: 16px;
   height: 16px;
   margin-left: 7px;
+  margin-top: 8px;
 }
 
 .close-popup {
