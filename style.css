@@ -218,7 +218,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: hsl(217.8, 54%, 10.6%);
+  color: #6070ff;
   margin: 4px 0;
 }
 
@@ -236,11 +236,11 @@ body {
 
 .workInfoDetailsLink {
   text-decoration: none;
-  color: hsl(217.5, 13.7%, 25.1%);
+  color: #6070ff
 }
 
 .firstWorkLink {
-  color: hsl(218.3, 31.1%, 15.6%);
+  color: #6070ff;
   margin-left: -10px;
 }
 

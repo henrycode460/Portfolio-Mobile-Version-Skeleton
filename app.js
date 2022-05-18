@@ -25,13 +25,16 @@ for (let i = 0; i < cardObject.length; i += 1) {
   const technologiesList = document.createElement('ul');
   popupImg.setAttribute('src', carditems.featuredImage);
   projectTitle.innerText = carditems.projectName;
+  projectTitle.classList.add('project-title');
   popuDetail.innerText = carditems.projectDescription;
+  
 
 
      carditems.works.forEach((elem) => {
           const item = document.createElement('li');
          
          item.classList.add('workInfo');
+         item.classList.add('workInfoDetailsLink');
           item.innerText = elem;
          technList.append(item);
        });
@@ -77,7 +80,6 @@ const projectCard = () => {
       const Btn = document.createElement('button');
       cardContentArea.classList.add('card-content-area');
       imageContainer.classList.add('card-img-head')
-
       technologiesDetails.classList.add('tag-btn-container')
   
       card.classList.add('card');
