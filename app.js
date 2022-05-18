@@ -174,6 +174,7 @@ navCloseBtn.addEventListener("click", function(){
 
 })
 
+
 // form validation
  
 const names = document.getElementById('name')
@@ -195,3 +196,4 @@ const email = document.getElementById('email');
  }
 
  });
+
