@@ -197,3 +197,52 @@ const email = document.getElementById('email');
 
  });
 
+
+
+//  local Storage
+function addRecord () {
+  let formData = localStorage.getItem('myFormData');
+
+  if(formData === null){
+    formData = {
+      [this.name]:this.value
+    }
+  }else{
+    formData = JSON.parse(formData);
+    formData[this.name] = this.value;
+  }
+
+  // saving to localstorage
+   localStorage.setItem('myFormData', JSON.stringify(formData))
+  
+}
+
+function getInTouch (e){
+  e.preventDefault();
+
+}
+
+function populateFormData(){
+  let formData = localStorage.getItem('myFormData');
+
+  if(formData !== null){
+    formData = JSON.parse(formData);
+    Object.entries(formData).forEach(([name,value])=>{
+      document.querySelector( `.inputFiled[name="${name}"]`).value = value;
+    })
+
+  }
+
+}
+
+document.addEventListener('DOMContentLoaded', () =>{
+populateFormData();
+form.addEventListener('submit', getInTouch);
+
+document.querySelectorAll('.inputFiled').forEach((field ) =>{
+field.addEventListener('change', addRecord);
+})
+
+});
+
+
